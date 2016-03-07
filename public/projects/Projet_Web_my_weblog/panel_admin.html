@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Blog - Administration</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<div id="bloc_head_connect">
+			<h1><a href="index.html">My_Blog</a></h1>
+
+			<form method="POST">
+				<label for="login">Login :</label>				
+				<input type="text" id="login" placeholder="Login" />
+				<label for="mdp">Password :</label>
+				<input type="password" id="mdp" placeholder="Password" />
+				<button class="confirm">Connexion</button>
+
+				<a href="inscription.html">Inscription</a>
+			</form>
+		</div>
+
+		<div id="bloc_nav">
+			<a href="index.html">Accueil</a>
+			<a href="membre.html">Mon compte</a>
+			<a href="contact.html">Contact</a>
+
+			<div id="bloc_search">
+				<input type="search" placeholder="Recherche..." name="search">
+				<button><i class="fa fa-search"></i></button>
+			</div>
+		</div>
+	</header>
+
+	<div id="bloc_admin">
+		<h2>Administration</h2>
+		<div id="panel_blog">
+			<h3>Blog</h3>
+			<ul>
+				<li><a id="create_article" href="#">Créer un article</a></li>
+				<li><a href="modif.html">Modifier un article</a></li>
+				<li><a href="modif.html">Supprimer un article</a></li>
+			</ul>
+		</div>
+
+		<div id="membre">
+			<h3>Membres</h3>
+			<ul>
+				<li><a href="modif.html">Changer le statut d'un membre</a></li>
+				<li><a href="modif.html">Modifier un membre</a></li>
+				<li><a href="modif.html">Supprimer un membre</a></li>
+				<li><a href="modif.html">Liste des membres</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="bloc_popup_create_article">
+		<div id="popup">
+			<label for="titre_create_article">Titre</label><br>
+			<input id="titre_create_article" type="text" placeholder="Titre" /><br>
+
+			<label for="contenu_article">Contenu</label><br>
+			<textarea id="contenu_article" name="message" rows="7" cols="40" placeholder=""></textarea>
+		</div>
+
+		<div id="upload">
+			<input type="file" />
+		</div>
+
+		<div id="bloc_check">
+			<input type="checkbox" id="musique" />
+			<label for="musique">Musique</label>
+
+			<input type="checkbox" id="jeux_video" />
+			<label for="jeux_video">Jeux Vidéo</label>
+
+			<input type="checkbox" id="Informatique" />
+			<label for="manga">Informatique</label>
+
+			<input type="checkbox" id="manga" />
+			<label for="manga">Manga</label>
+
+			<input type="checkbox" id="Programmation" />
+			<label for="manga">Programmation</label>
+
+			<input type="checkbox" id="Infographie" />
+			<label for="manga">Infographie</label>
+
+			<input type="checkbox" id="Photographie" />
+			<label for="manga">Photographie</label>
+
+			<input type="checkbox" id="Hack" />
+			<label for="manga">Hack</label>
+
+			<input type="checkbox" id="Education" />
+			<label for="manga">Education</label>
+
+			<input type="checkbox" id="Science" />
+			<label for="manga">Science</label>
+
+			<input type="checkbox" id="Sport" />
+			<label for="manga">Sport</label>
+
+			<input type="checkbox" id="Divers" />
+			<label for="manga">Divers</label>
+		</div>
+
+		<a class="confirm">Confirmer</a>
+		<a href="panel_admin.html" class="cancel">Annuler</a>
+	</div>
+
+</body>
+</html>

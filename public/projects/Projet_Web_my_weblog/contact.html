@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Blog - Contact</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<div id="bloc_head_connect">
+			<h1><a href="index.html">My_Blog</a></h1>
+
+			<form method="POST">
+				<label for="login">Login :</label>				
+				<input type="text" id="login" placeholder="Login" />
+				<label for="mdp">Password :</label>
+				<input type="password" id="mdp" placeholder="Password" />
+				<button class="confirm">Connexion</button>
+
+				<a href="inscription.html">Inscription</a>
+			</form>
+		</div>
+
+		<div id="bloc_nav">
+				<a href="index.html">Accueil</a>
+				<a href="membre.html">Mon compte</a>
+				<a href="contact.html">Contact</a>
+
+				<div id="bloc_search">
+					<input type="search" placeholder="Recherche..." name="search">
+					<button><i class="fa fa-search"></i></button>
+				</div>
+		</div>
+	</header>
+
+	<div id="bloc_contact">
+		<h2>Contact</h2>
+		<div id="contact">
+			<form method="POST" name="contact">
+				<label for="pseudo">Pseudo</label><br>
+				<input type="text" id="pseudo" placeholder="Pseudo" /><br>
+
+				<label>Téléphone</label><br>
+				<input type="tel" id="tel" placeholder="Numéro" /><br>
+
+				<label for="sexe">Sexe</label><br>
+				<input type="radio" id="sexe" name="sexe" value="homme" />Homme
+				<input type="radio" name="sexe" value="femme" />Femme<br>
+
+				<label>Votre message :</label>
+				<textarea name="message" rows="7" cols="40" placeholder="Entrez votre message..."></textarea>
+
+				<a class="confirm">Envoyer</a>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

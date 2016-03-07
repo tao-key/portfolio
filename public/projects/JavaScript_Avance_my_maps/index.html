@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>My_map</title> 
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/map.css">
+</head>
+
+
+<body style="background:url(image/1.jpg)">
+  <div id="container">
+    <h1 style="text-align:center;">My_map</h1>
+    <div id="destinationForm">
+      <form action="" method="get" name="direction" id="direction">
+        <label>Point de départ :</label>
+        <input type="text" name="origin" id="origin">
+        <label>Destination :</label>
+        <input type="text" name="destination" id="destination">
+        <input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate()">
+      </form>
+    </div>
+    <div id="map"></div>
+    <div id="panel"></div>
+    <input id="pac-input" class="controls" type="text" placeholder="  Rechercher...">
+  </div>
+
+  <!-- Include Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/fullscreen.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=fr&libraries=places"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+</body>
+</html>
